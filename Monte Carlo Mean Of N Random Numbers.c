@@ -7,18 +7,18 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define seed 4375    // AEM numper for seed
+#define seed 4375    // numper for seed
 #define Nmin 10      // start number of N
 #define Nmax 1000000 // end number of N
 int main(){
-	FILE *RandomWalk;
+	FILE *MonteCarlo;
 	int i;             // for calculating sum of random number
 	int N;            //for N steps
 	float sum,Mu;
 	
 	srand(seed);     // create a random number with same seed
 	
-	RandomWalk=fopen("RandomWalk.txt","w");  // text file to write data
+	RandomWalk=fopen("MonteCarlo.txt","w");  // text file to write data
 	
 	for (N=Nmin; N<=Nmax; N=N*10){		
      	double*Nums=malloc(N*sizeof(double));   // array  to hold N,  random numbers  for evrey N
@@ -34,10 +34,10 @@ int main(){
         } 		
 		Mu=(double)sum/N;
 		printf("%4.8f,%4.8f\n",log10(N),Mu);
-		fprintf(RandomWalk, "%f, %f\n",log10(N),Mu);  //  write data 
+		fprintf(MonteCarlo, "%f, %f\n",log10(N),Mu);  //  write data 
 		
 		free(Nums);  //delocate memory
 	}	
-	fclose(RandomWalk);  // close file 
+	fclose(MonteCarlo);  // close file 
 	return(0);
 } 

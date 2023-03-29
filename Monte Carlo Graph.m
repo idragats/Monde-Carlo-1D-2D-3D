@@ -1,4 +1,4 @@
-file=load("RandomWalk.txt");
+file=load("MonteCarlo.txt");
 x=file(:,1);
 y=file(:,2);
 plot(x,y,'o')
