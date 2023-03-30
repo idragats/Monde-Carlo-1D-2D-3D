@@ -1,4 +1,4 @@
-# Monde Carlo 
+# Monte Carlo 
 
 This code has been created to describe Monte Carlo method, the Monte Carlo method is an iterative process based on a random selection of numbers. 
 In this section we select a random number between 0, and 1, and with a probability of P=0.5, a technique which is widely known as random walk. 
