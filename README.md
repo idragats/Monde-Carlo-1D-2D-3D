@@ -6,3 +6,6 @@ We apply this method in 1 dimension using six different times  (N = 10, 100, 100
 Every time we calculate the average of N random numbers, and we alse write the data file for the different values of N and as a result. 
 Finally we create the total graph, where the x axis includes N values at the log scale and y axis includes averages of the random numbers. 
 Finally we can see that as the value of N increases, the accuracy of the average tends to be equal to the initial probability of 0.5.
+
+![image](https://github.com/user-attachments/assets/935309a1-4d8a-4573-943b-152573164b33)
+
